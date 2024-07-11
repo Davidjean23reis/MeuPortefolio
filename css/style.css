@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: #000000;
+}
+
+header {
+  color: #fff;
+  margin-top: -6px; 
+  padding: 10px 20px;
+  border-bottom: 1px solid #ffffff;
+}
+
+header h1 {
+  color: #6a80ff;
+  font-family: "Roboto", sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  box-shadow: 1px 1px 1px 1px #fffefe;
+}
+
+nav ul.social-links {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+}
+
+nav ul.social-links li {
+  margin-right: 20px;
+}
+
+nav ul.social-links li a img {
+  width: 60px;
+  height: 50px;
+  margin-top: 10px;
+}
+
+nav ul.navigation-links {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul.navigation-links li {
+  margin-right: 30px;
+}
+
+nav ul.navigation-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-family: "Plus Jakarta Sans";
+  text-decoration: none;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul.navigation-links li a:hover {
+  background-color: #7487f1;
+  color: #fff;
+  border-radius: 10px;
+}
+
+#sobre {
+  padding: 20px;
+  background-color: #000000;
+  margin-top: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#sobre h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.profile-picture {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.profile-picture img {
+  height: 450px;
+  width: 900px;
+  border-radius: 5px 5px 5px 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+#sobre p {
+  font-size: 1.1rem;
+  color: #fff6f6;
+  line-height: 1.8;
+}
+
+.descricao {
+  font-family: "Roboto", sans-serif;
+  font-size: 5rem;
+  line-height: 1.8;
+  margin-top: 4px;
+}
+.led-border {
+  border: 1px solid transparent;
+  padding: 0px;
+  box-shadow: 0 0 8px rgba(255, 254, 254, 0.8),
+    0 0 20px rgba(255, 254, 254, 0.6), 0 0 5px rgba(255, 254, 254, 0.4);
+  border-radius: 5px;
+  border-radius: 8px;
+}
+.bandeira-brasil {
+    width: 30px; 
+    text-align: right;
+}
+
+.white-section {
+    background-color: #ffffff; 
+    padding: 20px;
+}

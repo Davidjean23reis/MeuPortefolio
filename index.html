@@ -1,12 +1,77 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portefólio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meu Portfólio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .led-border {
+        border: 1px solid transparent; 
+        padding: 0px; 
+        box-shadow: 
+        0 0 8px rgba(255, 254, 254, 0.8),
+        0 0 20px rgba(255, 254, 254, 0.6), 
+        0 0 5px rgba(255, 254, 254, 0.4);
+        border-radius: 8px; }
+
+            .white-section {
+            background-color: #ffffff;
+            padding: 20px; 
+        }
+</style>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet"/>
+  <link rel="icon" href="./img/Favicon.png" type="image/x-png" />
 </head>
+<div class="led-border">
+</div>
 <body>
-    
+  <header>
+    <nav>
+      <ul class="social-links">
+        <li>
+          <a href="https://www.linkedin.com/in/davidjean1/" target="_blank">
+            <img src="img/In.png" alt="Ícone do LinkedIn" />
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/Davidjean23reis?tab=repositories" target="_blank">
+            <img src="img/Git.png" alt="Ícone do GitHub" />
+          </a>
+        </li>
+        <li>
+          <a href="https://wa.me/5524998250724" target="_blank">
+            <img src="img/Zap.png" alt="Ícone do WhatsApp" />
+          </a>
+        </li>
+      </ul>
+      <ul class="navigation-links">
+        <li><a href="#sobre">Sobre mim</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <img src="./img/Brasil.png" alt="Bandeira do Brasil" class="bandeira-brasil">
+      </ul>
+    </nav>
+  </header>
+  <section id="sobre">
+    <div class="container">
+      <div class="profile-picture">
+        <div class="profile-picture led-border">
+        <img src="./img/Davidjean123.png" alt="Foto de perfil" />
+      </div>
+    </div>
+  </section>
+  <section id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+    </div>
+  </section>
+  <section id="projetos">
+    <div class="container">
+      <h2>Projetos</h2>
+    </div>
+  </section>
+  <script src="js/script.js"></script>
 </body>
-<script></script>
 </html>
