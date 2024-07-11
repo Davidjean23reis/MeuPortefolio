@@ -10,16 +10,16 @@ body {
 }
 
 header {
-  color: #fff;
-  margin-top: -6px; 
+  color: #7e7b7b;
+  margin-top: -6px;
   padding: 10px 20px;
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid #bdb8b8;
 }
 
 header h1 {
   color: #6a80ff;
   font-family: "Roboto", sans-serif;
-  font-size: 2.5rem;
+  font-size: 2.4rem;
   letter-spacing: 2px;
   box-shadow: 1px 1px 1px 1px #fffefe;
 }
@@ -28,6 +28,9 @@ nav ul.social-links {
   list-style-type: none;
   display: flex;
   justify-content: flex-start;
+  padding: -10px;
+  margin: -10px;
+  height: 40px;
 }
 
 nav ul.social-links li {
@@ -35,9 +38,11 @@ nav ul.social-links li {
 }
 
 nav ul.social-links li a img {
-  width: 60px;
-  height: 50px;
-  margin-top: 10px;
+  margin-top: 15px;
+  transition: transform 0.3s ease;
+}
+nav ul.social-links li a:hover img {
+  transform: scale(1.2);
 }
 
 nav ul.navigation-links {
@@ -47,14 +52,14 @@ nav ul.navigation-links {
 }
 
 nav ul.navigation-links li {
-  margin-right: 30px;
+  margin-right: 8px;
 }
 
 nav ul.navigation-links li a {
-  color: #fff;
+  color: #d1cfcf;
   text-decoration: none;
   font-size: 1.4rem;
-  font-family: "Plus Jakarta Sans";
+  font-family: "Arial";
   text-decoration: none;
   padding: 10px 20px;
   transition: background-color 0.3s ease;
@@ -101,7 +106,7 @@ nav ul.navigation-links li a:hover {
 
 #sobre p {
   font-size: 1.1rem;
-  color: #fff6f6;
+  color: #e4e4e4;
   line-height: 1.8;
 }
 
@@ -120,11 +125,40 @@ nav ul.navigation-links li a:hover {
   border-radius: 8px;
 }
 .bandeira-brasil {
-    width: 30px; 
-    text-align: right;
+  width: 30px;
+  text-align: right;
 }
 
 .white-section {
-    background-color: #ffffff; 
-    padding: 20px;
+  background-color: #ffffff;
+  padding: 20px;
+}
+.card-header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* Estilo para a text-box */
+.text-box {
+  padding: 25px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #f8f8f8;
+  margin-left: 15px;
+  color: #000000;
+  font-size: 18px;
+  text-align: center;
+}
+
+.text-box p {
+  margin: 0;
+}
+.container {
+  padding: 20px;
 }
