@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -102,6 +103,8 @@ nav ul.navigation-links li a:hover {
   width: 900px;
   border-radius: 5px 5px 5px 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  max-width: 100%;
+  height: auto;
 }
 
 #sobre p {
@@ -146,12 +149,12 @@ nav ul.navigation-links li a:hover {
 .text-box {
   height: 425px;
   padding: 25px;
-  letter-spacing: 1px;
+  letter-spacing: 1.1px;
   border-radius: 8px;
   background-color: #f8f8f8;
   margin: 0 auto;
   color: #000000;
-  font-size: 1rem;
+  font-size: 1.1rem;
   text-align: center;
 }
 
@@ -170,6 +173,8 @@ nav ul.navigation-links li a:hover {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  font-style: italic;
+  color: #333333;
 }
 
 .card {
@@ -211,10 +216,162 @@ nav ul.navigation-links li a:hover {
   font-size: 1.5em;
   font-weight: bold;
 }
+
 .card {
   width: 100%;
   height: 180px;
   background-color: #f1f1f1;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; 
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {
+  .card-wrapper {
+    width: 200px;
+  }
+  .card {
+    height: 150px;
+  }
+  .profile-picture img {
+    height: 300px;
+    width: 600px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navigation-links {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-wrapper {
+    width: 100%;
+  }
+  .card {
+    height: auto;
+  }
+  .profile-picture img {
+    height: auto;
+    width: 100%;
+  }
+  .text-box {
+    height: auto;
+    padding: 15px;
+  }
+  .card-title {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+  nav ul.social-links {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav ul.social-links li {
+    margin-bottom: 10px;
+  }
+  nav ul.navigation-links {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-wrapper {
+    width: 100%;
+  }
+  .profile-picture img {
+    height: auto;
+    width: 100%;
+  }
+  .text-box {
+    height: auto;
+    padding: 10px;
+  }
+  .card-title {
+    font-size: 1em;
+  }
+  .card {
+    height: auto;
+  }
+}
+
+.menu-icon {
+  display: none; 
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px 0;
+  transition: transform 0.4s ease;
+}
+
+/* Estilo para animação do ícone hamburguer */
+.change .bar:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.change .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.change .bar:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+@media (max-width: 768px) {
+  .navigation-links {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+
+  .navigation-links.active {
+    display: block;
+  }
+
+  .navigation-links li {
+    padding: 10px 20px;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+  }
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+  }
+
+  .social-links {
+    display: none;
+  }
+  .navigation-links.active li {
+    display: block;
+  }
+
+  .navigation-links li {
+    display: none;
+  }
 }
