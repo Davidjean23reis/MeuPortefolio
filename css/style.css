@@ -119,7 +119,7 @@ nav ul.navigation-links li a:hover {
 .led-border {
   border: 1px solid transparent;
   padding: 0px;
-  box-shadow: 0 0 8px rgba(255, 254, 254, 0.8),
+  box-shadow: 0 0 8px rgba(218, 215, 215, 0.8),
     0 0 20px rgba(255, 254, 254, 0.6), 0 0 5px rgba(255, 254, 254, 0.4);
   border-radius: 5px;
   border-radius: 8px;
@@ -143,16 +143,15 @@ nav ul.navigation-links li a:hover {
   margin-bottom: 20px;
 }
 
-/* Estilo para a text-box */
 .text-box {
+  height: 425px;
   padding: 25px;
-  border: 1px solid #ccc;
+  letter-spacing: 1px;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   background-color: #f8f8f8;
-  margin-left: 15px;
+  margin: 0 auto;
   color: #000000;
-  font-size: 18px;
+  font-size: 1rem;
   text-align: center;
 }
 
@@ -161,4 +160,61 @@ nav ul.navigation-links li a:hover {
 }
 .container {
   padding: 20px;
+}
+#cards {
+  background-color: #f8f8f8;
+  padding: 20px;
+}
+
+#cards .container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 250px;
+  height: 200px;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #333333;
+  margin-top: 20px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  margin: 20px;
+}
+
+.card-title {
+  text-align: center;
+  margin: 0;
+  padding: 10px 0;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.card {
+  width: 100%;
+  height: 180px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
